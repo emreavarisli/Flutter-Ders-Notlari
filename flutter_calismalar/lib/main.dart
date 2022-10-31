@@ -6,13 +6,19 @@ import '101/app_bar_learn.dart';
 import '101/button_learn.dart';
 import '101/card_leran.dart';
 import '101/color_learn.dart';
+import '101/column_row_learn.dart';
 import '101/container_sized_box_learn.dart';
+import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
 import '101/image_learn.dart';
+import '101/indicator_learn.dart';
+import '101/list_tile_learn.dart';
 import '101/padding_learn.dart';
 import '101/scaffold_learn.dart';
+import '101/stack_learn.dart';
 import '101/stateless_learn.dart';
 import 'demos/note_demos_view.dart';
+import 'demos/stack_demo_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,6 +34,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+          progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.white),
+          listTileTheme: const ListTileThemeData(contentPadding: EdgeInsets.zero),
           cardTheme: CardTheme(
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
           ),
@@ -38,7 +46,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
           systemOverlayStyle: SystemUiOverlayStyle.light,
       )),
-      home: const NoteDemos(),
+      home: const StackDemoView(),
     );
   }
 }
