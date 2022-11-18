@@ -21,5 +21,4 @@ class AppBarLearnView extends StatelessWidget{
       body: Column(children: const []),
     );
   }
-
 }
