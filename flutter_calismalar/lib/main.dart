@@ -24,6 +24,7 @@ import '101/statefull_learn.dart';
 import '101/statefull_life_cycle_learn.dart';
 import '101/stateless_learn.dart';
 import '101/text_field_learn.dart';
+import 'demos/my_collections_demos.dart';
 import 'demos/note_demos_view.dart';
 import 'demos/stack_demo_view.dart';
 
@@ -59,7 +60,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light,
       )),
       //home: const StatefullLifeCycleLearn(message: "Velibb"),
-      home: const ListViewBuilderLearn(),
+      home: const MyCollectionsDemos(),
     );
   }
 }
